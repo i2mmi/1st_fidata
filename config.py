@@ -39,12 +39,18 @@ def get_korean_font_path():
     if system == 'Darwin':  # macOS
         # macOS의 기본 한글 폰트 경로
         possible_paths = [
+<<<<<<< HEAD
             '/System/Library/Fonts/AppleSDGothicNeo.ttc',           
             '/System/Library/Fonts/Supplemental/AppleGothic.ttf',   
             '/Library/Fonts/AppleGothic.ttf',
             '/System/Library/Fonts/AppleGothic.ttc',
             '/Library/Fonts/NanumBarunGothic.ttf',                 
             '/Library/Fonts/NanumGothic.ttf'
+=======
+            '/System/Library/Fonts/Supplemental/AppleGothic.ttf',
+            '/Library/Fonts/AppleGothic.ttf',
+            '/System/Library/Fonts/AppleGothic.ttc'
+>>>>>>> dbe67fc20430a82fbc3a16df8704193ad1332fbd
         ]
         for path in possible_paths:
             if os.path.exists(path):
